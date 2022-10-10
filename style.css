@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container nav {
+  width: 100%;
+  min-height: 80px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container nav .line {
+  width: 400px;
+  max-width: 80%;
+  height: 2px;
+  background-color: #000;
+}
+
+.container nav img {
+  max-width: 80%;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../image/header-bg.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header h1 span {
+  color: #e67136;
+}
+
+header a {
+  width: 222px;
+  height: 59px;
+  background: #e67136;
+  box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.membership {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f4f4;
+}
+
+.membership .left {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.membership .left h1 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #e67136;
+}
+
+.membership .left h2 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.membership .left p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.membership .left a {
+  width: 327px;
+  height: 62.37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e67136;
+  box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.membership .right {
+  width: 50%;
+  padding-left: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.firkly {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f4f4;
+}
+
+.firkly .left {
+  width: 50%;
+  min-height: 100vh;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.firkly .right {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.firkly .right h1 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #e67136;
+}
+
+.firkly .right p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.firkly .right a {
+  width: 326px;
+  height: 60px;
+  background: #e67136;
+  box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f4f4;
+}
+
+.business .left {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.business .left h1 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #e67136;
+}
+
+.business .left h2 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.business .left p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.business .left a {
+  width: 327px;
+  height: 62.37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e67136;
+  box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.business .right {
+  width: 50%;
+  padding-left: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 300px;
+    background: url(../image/header-media.png) no-repeat center;
+    background-size: cover;
+  }
+  header h1 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  header a {
+    width: 164px;
+    height: 25px;
+  }
+
+  .membership {
+    flex-direction: column-reverse;
+  }
+
+  .membership .left {
+    width: 100%;
+  }
+
+  .membership .left h1 {
+    width: 100%;
+    height: 66px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .membership .left {
+    min-height: 300px;
+    padding: 40px 0;
+  }
+
+  .membership .left h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .membership .left p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  .membership .left a {
+    width: 172px;
+    height: 62px;
+  }
+
+  .membership .right {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 350px;
+  }
+
+  .membership .right img {
+    width: 284px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 295px;
+  }
+
+  .firkly {
+    flex-direction: column;
+  }
+
+  .firkly .right {
+    width: 100%;
+  }
+
+  .firkly .right {
+    min-height: 300px;
+    padding: 40px 10px;
+    gap: 40px;
+  }
+
+  .firkly .right h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .firkly .right p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .firkly .right a {
+    width: 172px;
+    height: 62px;
+  }
+
+  .firkly .left {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    padding: 0;
+  }
+
+  .firkly .left img {
+    width: 284px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 295px;
+  }
+
+  .business {
+    flex-direction: column-reverse;
+  }
+
+  .business .left {
+    width: 100%;
+  }
+
+  .business .left h1 {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .business .left {
+    min-height: 300px;
+    padding: 40px 10px;
+  }
+
+  .business .left h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .business .left p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .business .left a {
+    width: 172px;
+    height: 62px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .business .right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+  }
+
+  .business .right img {
+    width: 284px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 295px;
+  }
+}
