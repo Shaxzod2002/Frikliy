@@ -97,6 +97,7 @@ header a {
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  padding: 0 20px;
 }
 
 .membership .left h1 {
@@ -114,7 +115,7 @@ header a {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 20px;
+  line-height: 35px;
   text-align: center;
   color: #000000;
 }
@@ -157,6 +158,10 @@ header a {
   align-items: center;
 }
 
+.membership .right img {
+  max-width: 80%;
+}
+
 .firkly {
   width: 100%;
   min-height: 100vh;
@@ -172,13 +177,19 @@ header a {
   align-items: center;
 }
 
+.firkly .left img {
+  max-width: 80%;
+}
+
 .firkly .right {
   width: 50%;
   min-height: 100vh;
   display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .firkly .right h1 {
@@ -236,6 +247,7 @@ header a {
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  padding: 0 20px;
 }
 
 .business .left h1 {
@@ -294,6 +306,10 @@ header a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.business .right img {
+  max-width: 80%;
 }
 
 .professional {
@@ -466,7 +482,7 @@ header a {
   padding: 20px;
 }
 
-.tools h1  {
+.tools h1 {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 700;
@@ -521,6 +537,7 @@ header a {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
+  text-align: center;
   line-height: 100%;
   color: #000000;
 }
@@ -580,6 +597,13 @@ footer .box .top .contact {
 
 footer .box .top .logo {
   padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .box .top .logo img {
+  max-width: 90%;
 }
 
 footer .box .top .contact p:first-child {
@@ -642,6 +666,23 @@ footer .box .bottom .right a {
   color: #000;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .membership .left h1, .firkly .right h1, .business .left h1, .professional > h1, .rewards > h1, .brands > h1, .tools > h1, .tools > h2  {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .membership .left p, .firkly .right p, .business .left p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .membership .left a, .firkly .right a, .business .left a, .rewards a, .tools a {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     min-height: 300px;
@@ -655,8 +696,10 @@ footer .box .bottom .right a {
   }
 
   header a {
-    width: 164px;
-    height: 25px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
   }
 
   .membership {
@@ -816,5 +859,65 @@ footer .box .bottom .right a {
     height: 225px;
     object-fit: cover;
     border-radius: 295px;
+  }
+
+  .membership .left a,  .firkly .right a, .business .left > a, .rewards > a,
+  .tools a {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .brands {
+    padding: 0 20px;
+  }
+
+  .professional > h1, .rewards > h1, .brands h1,
+  .tools > h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .tools > h2 {
+    font-size: 24px;
+  }
+
+  footer .top {
+    flex-direction: column;
+  }
+
+  footer .top .logo {
+    width: 100%;
+  }
+
+  footer .top .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .top .contact p:first-child {
+    font-size: 20px !important;
+  }
+
+  footer .bottom {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  footer .bottom .left,
+  footer .bottom .right {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .box > p {
+    padding: 20px 20px;
+    text-align: center;
   }
 }
